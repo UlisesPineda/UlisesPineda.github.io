@@ -367,7 +367,7 @@ a.hover-title {
         filter: grayscale(0);
     }    
     .data-card-container:hover .button-tech {
-        box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.2);
+        box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.3);
     }
     .icon-rss:hover {
         opacity: 1;
@@ -390,8 +390,8 @@ ul li {
     text-align: center;
     white-space: now-rap;
     color: white;
-    background-color: rgba(136, 219, 211, .6);
-    transition: box-shadow .4s ease-in-out;
+    background-color: rgba(136, 219, 211, .50);
+    transition: box-shadow .4s ease-in-out, background-color .4s ease-in-out;
 }
 @media ( max-width: 480px ) {
     .data-card-container {
