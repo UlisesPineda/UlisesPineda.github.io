@@ -278,19 +278,24 @@ svg {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        line-height: 1.5;
+    }
+    .main-data-portfolio h1 span:nth-child(1){
+        font-size: 24px;
+    }
+    .main-activity {
+        font-size: 20px;
+        text-align: center;
     }
     .main-data-portfolio h2 {
-        font-size: 16px;
+        font-size: 18px;
         text-align: center;
         padding: 0 10%;
         display: inline;
     }
-    .main-data-portfolio > h1 > span:nth-child(1){
-        font-size: 22px;
-    }
-    .main-activity {
-        font-size: 18px;
-        text-align: center;
+    .icon-rss {
+        height: 40px;
+        width: 40px;
     }
 }
 @media ( min-width: 769px ) and ( max-width: 1024px ) {
