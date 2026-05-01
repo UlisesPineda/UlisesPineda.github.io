@@ -334,7 +334,7 @@ svg {
 .text-colored {
     color: var(--main-color);
 }
-@media ( max-width: 480px ) {
+@media ( max-width: 768px ) {
     .main-info-portfolio {
         width: 100%;
         transform: translateX(0);
@@ -348,8 +348,6 @@ svg {
     .about-info p {
         font-size: 14px;
     }
-}
-@media ( min-width: 481px ) and ( max-width: 1024px ) {
 }
 
 /* ---------- ESTILOS DE PROYECTOS ---------- */
@@ -423,7 +421,7 @@ ul li {
     background-color: rgba(136, 219, 211, .50);
     transition: box-shadow .4s ease-in-out, background-color .4s ease-in-out;
 }
-@media ( max-width: 480px ) {
+@media ( max-width: 768px ) {
     .data-card-container {
         margin: 10px 0;
         padding: 20px;    
@@ -456,7 +454,7 @@ ul li {
         font-size: 10px;
     }
 }
-@media ( min-width: 481px ) and ( max-width: 1024px ) {
+@media ( min-width: 769px ) and ( max-width: 1024px ) {
     a.title-link-card {
         font-size: 18px;
         color: var(--main-color);
@@ -470,7 +468,7 @@ ul li {
     }   
 }
 /* ---------- ESTILOS DE ABOUT TECH ---------- */
-@media ( max-width: 480px ) {
+@media ( max-width: 768px ) {
     .about-tech-areas h3 {
         font-size: 16px;
     }
@@ -478,7 +476,7 @@ ul li {
         font-size: 12px;
     }
 }
-@media ( min-width: 481px ) and ( max-width: 1024px ) {
+@media ( min-width: 769px ) and ( max-width: 1024px ) {
     .about-tech-areas  h3 {
         font-size: 16px;
     }
@@ -492,7 +490,7 @@ ul li {
 .email {
     background-image: url('img/email.png');
 }
-@media ( max-width: 480px ) {
+@media ( max-width: 768px ) {
     .contact-form h3 {
         font-size: 16px;
     }
