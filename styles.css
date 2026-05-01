@@ -21,8 +21,6 @@ body {
     font-style: normal;
     color: white;
     position: relative;
-    overflow-x: hidden;
-    overflow-y: auto;
 }
 html,
 .main-info-portfolio {
