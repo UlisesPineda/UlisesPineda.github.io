@@ -336,7 +336,7 @@ svg {
 }
 @media ( max-width: 768px ) {
     .main-info-portfolio {
-        height: 60%;
+        height: 50%;
         width: 100%;
         transform: translateX(0);
     }
