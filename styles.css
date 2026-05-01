@@ -21,6 +21,8 @@ body {
     font-style: normal;
     color: white;
     position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 html,
 .main-info-portfolio {
@@ -260,7 +262,7 @@ svg {
 .linkedin {
     background-image: url('img/linkedin.png');
 }
-@media ( max-width: 480px ) {
+@media ( max-width: 768px ) {
     .header-portfolio {
         position: initial;
         width: 100%;
@@ -291,7 +293,7 @@ svg {
         text-align: center;
     }
 }
-@media ( min-width: 481px ) and ( max-width: 1024px ) {
+@media ( min-width: 769px ) and ( max-width: 1024px ) {
     .header-portfolio {
         width: 30vw;
     }
