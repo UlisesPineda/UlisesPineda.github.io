@@ -267,6 +267,31 @@ svg {
         position: initial;
         width: 100%;
     }
+    .main-data-portfolio {
+        padding-left: 0;
+        align-items: center;
+    }
+    .main-data-portfolio h1,
+    .main-data-portfolio h2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-data-portfolio h2 {
+        font-size: 16px;
+        text-align: center;
+        padding: 0 10%;
+        display: inline;
+    }
+    .main-data-portfolio > h1 > span:nth-child(1){
+        font-size: 22px;
+    }
+    .main-activity {
+        font-size: 18px;
+        text-align: center;
+    }
 }
 @media ( min-width: 481px ) and ( max-width: 1024px ) {
     .header-portfolio {
