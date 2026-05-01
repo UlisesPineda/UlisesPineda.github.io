@@ -487,6 +487,9 @@ ul li {
 }
 
 /* ---------- ESTILOS DE CONTACTO ---------- */
+.main-info-portfolio section:nth-child(4) {
+    align-items: center;
+}
 .data-contact {
     display: flex;
     justify-content: center;
