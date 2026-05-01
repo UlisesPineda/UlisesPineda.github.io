@@ -336,6 +336,7 @@ svg {
 }
 @media ( max-width: 768px ) {
     .main-info-portfolio {
+        height: 60%;
         width: 100%;
         transform: translateX(0);
     }
@@ -423,7 +424,7 @@ ul li {
 }
 @media ( max-width: 768px ) {
     .data-card-container {
-        margin: 10px 0;
+        margin: 50px 0;
         padding: 20px;    
     }
     .work-info h3 {
@@ -469,6 +470,9 @@ ul li {
 }
 /* ---------- ESTILOS DE ABOUT TECH ---------- */
 @media ( max-width: 768px ) {
+    .main-info-portfolio section:nth-child(3) {
+        min-height: 40vh;
+    }
     .about-tech-areas h3 {
         font-size: 16px;
     }
@@ -485,6 +489,8 @@ ul li {
 /* ---------- ESTILOS DE CONTACTO ---------- */
 .data-contact {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
 }
 .email {
