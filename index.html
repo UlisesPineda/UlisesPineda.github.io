@@ -93,6 +93,78 @@
             <section class="work-info">
                 <h3>Mis trabajos destacados</h3>
                 <article class="card-container">
+                                        <div class="data-card-container">
+                        <h4 class="title-link-card hover-title">
+                            Sistema de Facturación Electrónica
+                            <div class="img-card-container">
+                                <img src="img/cfdi.jpg" , alt="Facturación Electrónica">
+                            </div>
+                        </h4>
+                        <p>Plataforma de facturación electrónica enterprise diseñada específicamente para cliente privado con necesidades específicas en su modelo de facturación, con cumplimiento nativo del estándar CFDI 4.0 y Complemento de Pagos 2.0 del SAT.</p>
+                        <em class="hover-title">Arquitectura:</em>
+                        <ul>
+                            <li>Patrón: Modular Monolith (documentado por Martin Fowler) — dominios de negocio encapsulados, desplegables como una unidad, pero con capacidad futura de extracción a microservicios</li>
+                            <br>
+                            <li>DD (Domain-Driven Design): Cada módulo representa un Bounded Context (facturación, clientes, productos, timbrado, autenticación).</li>
+                            <br>
+                            <li>CQRS: Separación de comandos (escritura) y consultas (lectura) dentro de cada módulo.</li>
+                            <br>
+                            <li>Hexagonal Architecture / Adapter Pattern: El sistema interno no conoce detalles de infraestructura externa (ej. servidor PHP de timbrado encapsulado como StampingProvider).</li>
+                            <br>
+                            <li>Event-Driven Architecture interna: Comunicación entre módulos mediante eventos tipados, no importaciones directas.</li>
+                            <br>
+                            <li>Queue-based Load Leveling: Procesamiento asíncrono con colas (BullMQ) para evitar reprocesos y duplicados.</li>
+                        </ul>
+                        <em class="hover-title">Seguridad y Control:</em>
+                        <ul>
+                            <li>Access Token (15 min) + Refresh Token (7 días en Redis), con revocación instantánea.</li>
+                            <br>
+                            <li>Roles diferenciados (admin, contador, visualizador) con decoradores en cada endpoint.</li>
+                            <br>
+                            <li>Rate limiting por IP y por usuario.</li>
+                            <br>
+                            <li>Validación estricta de inputs con class-validator en la capa de transporte.</li>
+                            <br>
+                            <li>Variables de entorno y Docker Secrets, nunca en código.</li>
+                            <br>
+                            <li>TLS en todas las comunicaciones.</li>
+                        </ul>
+                        <em class="hover-title">Observabilidad y Auditoría:</em>
+                        <ul>
+                            <li>Audit trail completo, se registra quién, cuándo, qué, con qué datos y resultado.</li>
+                            <br>
+                            <li>Tablas de auditoría</li>
+                            <br>
+                            <li>Dashboard de monitoreo de colas (Bull Board).</li>
+                        </ul>
+                        <em class="hover-title">Estructura Modular:</em>
+                        <ul>
+                            <li>Capa de Presentación (Next.js)</li>
+                            <br>
+                            <li>Capa de Transporte (NestJS Guards, Interceptors, Pipes)</li>
+                            <br>
+                            <li>Capa de Aplicación (Casos de uso, Commands, Queries)</li>
+                            <br>
+                            <li>Capa de Dominio (Entidades, value objects, reglas de negocio)</li>
+                            <br>
+                            <li>Capa de Infraestructura (Repositorios, ORM, servicios externos, colas)</li>
+                            <br>
+                            <li>Capa de Datos (PostgreSQL + Redis)</li>
+                        </ul>
+                        <div class="buttons-tech-container">
+                            <span class="button-tech">Next.js</span>
+                            <span class="button-tech">NestJS</span>
+                            <span class="button-tech">Typescript</span>
+                            <span class="button-tech">Tailwind</span>
+                            <span class="button-tech">Node.js</span>
+                            <span class="button-tech">PostgreSQL</span>
+                            <span class="button-tech">Redis</span>
+                            <span class="button-tech">BullMQ</span>
+                            <span class="button-tech">JWT</span>
+                            <span class="button-tech">Docker</span>
+                            <span class="button-tech">Gitlab</span>
+                        </div>
+                    </div>
                     <div class="data-card-container">
                         <a href="https://soulus.app" , target="_blank" ,
                             rel="noopener noreferrer" title="Visita el proyecto" class="title-link-card hover-title">
@@ -213,27 +285,6 @@
                             <span class="button-tech">Axios</span>
                             <span class="button-tech">Firebase</span>
                             <span class="button-tech">Mongo DB</span>
-                        </div>
-                    </div>
-                    <div class="data-card-container">
-                        <a href="https://www.creditopymemexico.net/" , target="_blank" , rel="noopener noreferrer"
-                            title="Visita el proyecto" class="title-link-card hover-title">
-                            Crédito PyME México
-                            <div class="img-card-container">
-                                <img src="img/credmex.png" , alt="Crédito PyME México website">
-                            </div>
-                        </a>
-                        <p>Landing page para promoción comercial de broker financiero.</p>
-                        <em class="hover-title">Características principales:</em>
-                        <ul>
-                            <li>Formulario de contacto</li>
-                            <li>Diseño personalizado</li>
-                        </ul>
-                        <div class="buttons-tech-container">
-                            <span class="button-tech">Ract</span>
-                            <span class="button-tech">React Router</span>
-                            <span class="button-tech">Node</span>
-                            <span class="button-tech">Express</span>
                         </div>
                     </div>
                 </article>
